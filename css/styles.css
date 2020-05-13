@@ -1,0 +1,49 @@
+body{
+    background: #114422; 
+    background-image: url('https://wallpapercave.com/w/wp5909623');
+    /*background-size: 500px 300px;*/
+    /* A medida vh é igual a 1/100 da altura da viewport. Então, por exemplo, se a altura do navegador é     900px, 1vh equivale a 9px e, analogamente, se a largura da viewport é 750px, 1vw equivale a 7.5px.*/
+    background-size: 100vh;
+    font-family: Arial;
+    height: 100vh;
+    
+  }
+  
+  .menu{
+    background-color: white;
+    
+  }
+  
+  a {
+    color: teal;
+    text-decoration: none
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Duas classes pegando as mesmas propriedades: */
+  
+  .site-subtitle,
+  .site-title {
+    color: whitesmoke;
+    text-align: center;
+  }
+  
+  .site-subtitle {
+    font-style: italic;
+  }
+  
+  /* Seletor Hierárquico: Começa lendo da Direita -> Esquerda
+   Procura todas as li para depois menu */
+  
+  .menu ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  
+  .menu li {
+    list-style: none;
+  }
