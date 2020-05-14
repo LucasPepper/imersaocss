@@ -7,11 +7,11 @@
 
 body{
     background: #114422; 
-    background-image: url('https://wallpapercave.com/w/wp5909623');
+    background-image: url('https://img.freepik.com/vetores-gratis/fundo-de-formas-abstratas-triangulo-branco_1035-17544.jpg?size=626&ext=jpg');
     /*background-size: 500px 300px;*/
     /* A medida vh é igual a 1/100 da altura da viewport. Então, por exemplo, se a altura do navegador é     900px, 1vh equivale a 9px e, analogamente, se a largura da viewport é 750px, 1vw equivale a 7.5px.*/
-    background-size: 100vh;
-    font-family: Arial;
+    background-size: 100vh 100vw;
+    font-family: 'Roboto', sans-serif;
     height: 100vh;
   }
 
@@ -40,22 +40,25 @@ body{
     justify-content: center;
   }
   
-  /* Duas classes pegando as mesmas propriedades: */
+  /* Duas classes pegando as mesmas propriedades: 
   
   .site-subtitle,
   .site-title {
     color: whitesmoke;
     text-align: center;
   }
-
+  */
   .site-title {
     font-size: 4em;
+    font-family: 'Caveat', cursive;
   }
   
   .site-subtitle {
     font-style: italic;
+    font-family: 'Comic Neue', cursive;
+    line-height: 1.5em;
   }
-  
+
   /* Seletor Hierárquico: Começa lendo da Direita -> Esquerda
    Procura todas as li para depois menu */
   
@@ -74,6 +77,7 @@ body{
   
   .menu li {
     list-style: none;
+    background-color: pink;
   }
 
   .menu a {
@@ -92,7 +96,58 @@ body{
     text-decoration: underline;
   }
 
+  .portfolio {
+    /*background-color: rgb(204, 207, 228);*/
+    padding: 2em;
+    height: 100vh;
+  }
+
+  .portfolio h2 {
+    color: #06471c;
+    font-family: 'Comic Neue', cursive;
+    margin-bottom: 1.5em;
+    font-size: 2em;
+  }
+
+  .portfolio .grid {
+    display: grid;
+    gap: 2em;
+  }
+
+  @media (min-width: 560px) {
+    .portfolio .grid {
+      grid-template-columns: 240px 240px;
+    }
+  }
+
+  @media (min-width: 880px) {
+    .portfolio .grid {
+      /* grid-template-columns: repeat(3, 240px); */
+      grid-template-columns: 240px 240px 240px;
+      align-content: center;
+      justify-content: center;
+      /* Frequentemente ocorrerá um problema de "sobrar espaço" no final da página.
+         É preciso fazer um alinhamento ou centralização, através de cálculos de px */
+      height: calc(100vh - 4em - 48px - 8em);
+    }
+  }
+  
+  .portfolio .figure {
+    text-align: center;
+  }
+
   .img-portfolio{
     height: 180px;
-    width: 180px;
+    width: 240px;
+    object-fit: cover;
+    object-position: bottom;
+    border-radius: 10px;
   }
+/*
+  @media (min-width: 1200px) {
+    .img-portfolio {
+      height: auto;
+      width: 100%;
+    }
+  }
+*/  
