@@ -6,12 +6,12 @@
 }
 
 body{
-    background: #114422; 
-    background-image: url('https://img.freepik.com/vetores-gratis/fundo-de-formas-abstratas-triangulo-branco_1035-17544.jpg?size=626&ext=jpg');
+    background-image: url('https://image.freepik.com/vetores-gratis/fundo-elegante-padrao-de-linha-hexagonal_1017-19742.jpg');
     /*background-size: 500px 300px;*/
     /* A medida vh é igual a 1/100 da altura da viewport. Então, por exemplo, se a altura do navegador é     900px, 1vh equivale a 9px e, analogamente, se a largura da viewport é 750px, 1vw equivale a 7.5px.*/
-    background-size: 100vh 100vw;
+    background-size: 100vh ;
     font-family: 'Roboto', sans-serif;
+    font-size: 20;
     height: 100vh;
   }
 
@@ -29,7 +29,6 @@ body{
     body {
       font-size: 18px;
     }
-
   }
 
   header {
@@ -54,7 +53,7 @@ body{
   }
   
   .site-subtitle {
-    font-style: italic;
+    font-style: bold;
     font-family: 'Comic Neue', cursive;
     line-height: 1.5em;
   }
@@ -63,7 +62,6 @@ body{
    Procura todas as li para depois menu */
   
   .menu {
-    background-color: white;
     position: fixed;
     width: 100vw;
     /* Top = 0 : 0 de Distância do topo da página */
@@ -73,22 +71,22 @@ body{
   .menu ul {
     display: flex;
     justify-content: space-around;
+    font-style: bold;
+    font-size: larger;
   }
   
   .menu li {
     list-style: none;
-    background-color: pink;
+    font-style: bold;
   }
 
   .menu a {
-    background-color: black;
-    color: red;
     display: block;
     padding: 10px 20px;
   }
 
   a {
-    color: teal;
+    color: black;
     text-decoration: none
   }
   
@@ -107,6 +105,7 @@ body{
     font-family: 'Comic Neue', cursive;
     margin-bottom: 1.5em;
     font-size: 2em;
+    text-align: center;
   }
 
   .portfolio .grid {
@@ -134,6 +133,12 @@ body{
   
   .portfolio .figure {
     text-align: center;
+  }
+
+  figcaption {
+    display: block;
+    text-align: center;
+    font-size: 1.2em;
   }
 
   .img-portfolio{
