@@ -83,6 +83,17 @@ body{
   .menu a {
     display: block;
     padding: 10px 20px;
+    transition: background-color 1s, color 0.5s;
+  }
+
+  .menu a:hover {
+    background-color: rgb(9, 131, 201);
+    color: white;
+  }
+
+  .menu a:active {
+    background-color: rgb(201, 172, 9);
+    color: white;
   }
 
   a {
@@ -94,12 +105,14 @@ body{
     text-decoration: underline;
   }
 
+  .contato,
   .portfolio {
     /*background-color: rgb(204, 207, 228);*/
     padding: 2em;
-    height: 100vh;
+    min-height: 100vh;
   }
 
+  .contato h2,
   .portfolio h2 {
     color: #06471c;
     font-family: 'Comic Neue', cursive;
@@ -147,6 +160,21 @@ body{
     object-fit: cover;
     object-position: bottom;
     border-radius: 10px;
+  }
+  .contato .icons {
+    text-align: center;
+  }
+
+  .contato a {
+    font-size: 4em;
+    transition: text-shadow 1s;
+  }
+
+  /* Perceptível quando passar o mouse em cima */
+  .contato a:active,
+  .contato a:hover {
+    text-decoration: none;
+    text-shadow: 1px 1px 1px blue;
   }
 /*
   @media (min-width: 1200px) {
